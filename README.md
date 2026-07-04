@@ -27,7 +27,7 @@ It exists in two forms, side by side:
 - Week 4 (Jun 22-28) — the multi-machine platform and the roads not taken
 
 ### [03 — July: Productization](03-july-productization/) · *what do we actually sell*
-- Week 5 (Jun 29 - Jul 5) — VPS anchor, security product line, the survival-revenue plan
+- [Week 5 (Jun 29 - Jul 5)](03-july-productization/week-5/) — VPS anchor, security product line, and [the birth of Mycroft](03-july-productization/week-5/2026-07-02.ru.md)
 
 ---
 
