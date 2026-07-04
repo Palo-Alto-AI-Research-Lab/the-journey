@@ -17,6 +17,8 @@ It exists in two forms, side by side:
 
 ## Table of contents
 
+### [Пролог — двое в одной лодке](00-prologue.md) · *who Tony & Mike are, and how to read this*
+
 ### [01 — May: Genesis](01-may-genesis/) · *the second brain is born*
 - [Week 0 (May 27-31)](01-may-genesis/week-0/) — *first sessions: structure, imports, and reaching out to warm leads*
 
