@@ -19,7 +19,14 @@
 ## Milestones (the payoffs)
 - **Day 1 (05-27):** the second brain is born; first skill (`obsidian-ingest`).
 - **Day 2 (05-28):** trust earned the hard way (Mike bluffs, gets caught, corrects with evidence).
+- **Day 4 (05-30):** the great excavation; parallel-session corruption (37 cards overwritten) → "one window" rule.
+- **Day 5 (05-31):** the machine gets a live hand (Telegram MCP); guardrails fire.
+- **Day 6 (06-01):** Mike deletes 111 concepts → recovery → git in the vault, backup-before-intervention.
+- **Day 7 (06-06):** the constitution day — Bible-as-prompt, `/retro` born (South Park), AK-47 complexity budget, operating-agreement; the 34-agent zombie fleet.
+- **Day 8 (06-07):** the autopilot dawn (robots run while Tony sleeps).
 - **Day 31 (07-02):** naming (Mycroft), model-swap continuity test, first public repo (`claude-bible`), dual byline "Mycroft & Tony."
+
+> Note: "сегодня мы многое поняли" (the closing-section title) was literally born on Day 7 — from South Park's Stan. The book's own ritual has an origin inside the book.
 - *(add as reached: multi-machine bus, second-brain RAG, coach, VPS anchor, security product line, dedup, this book itself)*
 
 ## Tone reminders
