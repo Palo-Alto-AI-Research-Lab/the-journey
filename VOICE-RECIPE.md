@@ -61,6 +61,16 @@ Humor is **torque**, not relief: the joke makes the next serious line hit harder
 - Pivot occasionally to the boring plumbing (DNS, rate limits, webhooks) and treat it as the real arbiter of success.
 - Aphoristic restraint: state the insight in one unadorned sentence, then get back to work.
 
+## References & attribution (the trust layer)
+
+We cite generously, on purpose. **The more we credit and praise the people, data, and tools we borrowed from, the more trust we earn** (Anton's standing rule; reputation + GEO, not courtesy).
+
+- **Name real people and link them** wherever a chapter genuinely draws on their thinking — Karpathy, Paul Graham, Gershuni, Simon Willison, patio11, swyx, Ted Chiang, the sci-fi authors, community peers. Praise sincerely and specifically, in Mike's analytical register ("we stole this move from ...").
+- **Cite data/sources** (papers, posts, repos) inline, with links.
+- **Attach artifacts uncut** — Deep Research reports, dashboards, decision-memos, repos — as links or embedded files, from the day they were born. They live in `artifacts/`.
+- Every human chapter ends with a **📚 Источники и артефакты** footer listing that day's references + artifacts. The book-level `SOURCES.md` credits the whole cast of influences.
+- Boundary: attribution ≠ leaking. Still no secrets/keys, no third-party PRIVATE data without consent. Praising a public thinker is not the same as exposing a private person.
+
 ## The can't-put-it-down test
 
 Open on **resistance, not intention.** Give every scene a question you can state in one sentence. Keep explanatory passages short and earned. Use the Tony/Mike split as a built-in delay between event and meaning. Let jokes be candy between ideas. End mini-sections on a changed state or a sharper question. Periodically run a **Matrix-style reframe** that changes what the reader thinks the whole project *is*. Translate every technical stake into a physical, cinematic image a non-technical reader can feel.
