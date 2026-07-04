@@ -48,4 +48,4 @@ Variable — as long as the day earned, no filler. Big days run longer; quiet da
 
 ## The engine
 
-Generation loads: this `STYLE.md` + [`PLAYBOOK.md`](PLAYBOOK.md) (writing craft) + the day's fact-sheet (Sonnet-extracted from the logs) → **Fable** writes the duet (Тони cinematic + Майк co-founder) + the `.dev.md` machine log. Calibrate Тони against real posts in `01-Conversations\Facebook\posts\` (`value_score >= 0.6`); calibrate Майк against `cofounder-identity` + `synthetic-cofounder` memory. On-demand single days can use `/speak-as`.
+Generation loads: this `STYLE.md` + [`VOICE-RECIPE.md`](VOICE-RECIPE.md) (the mixing formula + humor engine) + [`PLAYBOOK.md`](PLAYBOOK.md) (pacing/structure) + the day's fact-sheet (Sonnet-extracted from the logs) → **Fable** writes the duet (Тони cinematic + Майк co-founder) + the `.dev.md` machine log. Calibrate Тони against real posts in `01-Conversations\Facebook\posts\` (`value_score >= 0.6`); calibrate Майк against `cofounder-identity` + `synthetic-cofounder` memory. On-demand single days can use `/speak-as`.
