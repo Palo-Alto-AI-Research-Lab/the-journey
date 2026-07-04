@@ -5,13 +5,12 @@ stage: distilled
 altitude: decision
 audience: both
 origin: anton
+machine: hub
 authored_by: hybrid
 ai_author: Claude (Fable 5, hub session + 2 Sonnet-агента)
 date_established: 2026-07-02
 status: proposed
 confidence: high
-machine: A-2022BAYAREA
-operator: Anton
 tags: [decision, machine-bus, consensus, syncthing, fleet, root-cause, watchdog]
 ---
 

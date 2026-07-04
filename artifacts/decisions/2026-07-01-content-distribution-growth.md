@@ -6,7 +6,7 @@ type: decision
 stage: distilled
 origin: anton
 authored_by: claude-code
-machine: HP17-ZBook
+machine: laptop
 status: proposed
 theme: content-factory
 concept: "[[content-factory]]"

@@ -7,8 +7,7 @@ authored_by: hybrid
 date_established: 2026-07-02
 status: accepted
 theme: crm-pipeline
-machine: A-2022BAYAREA
-operator: Anton
+machine: hub
 tags: [decision, granola, crm, pipeline, alpha-protocol, deep-research]
 related: "DR-отчёт: E:\\Obsidian\\_originals\\2026-07-02-dr-granola-extraction-pipeline.md (вне волта, wikilink не резолвится)"
 ---
@@ -29,7 +28,7 @@ related: "DR-отчёт: E:\\Obsidian\\_originals\\2026-07-02-dr-granola-extract
 - Если unattended-запись станет жёстким требованием — миграционный fallback: Fathom/Fireflies/tl;dv (у них webhooks + бот).
 
 **Решение (принято 2026-07-02).**
-1. **Прод-рельс = официальный API**: ключ из десктоп-приложения (Granola установлена на хабе) → `secrets\granola.env`.
+1. **Прод-рельс = официальный API**: ключ из десктоп-приложения (Granola установлена на хабе) → локальный секрет-стор.
 2. **Бэкфилл**: скрипт `E:\Obsidian\_imports\granola\granola_pull.py` — обход папок/заметок с пагинацией, raw JSON снапшоты, markdown-заметки в волт, SQLite-чекпоинты, дедуп по meeting id.
 3. **Ночная рутина** в окно 00:30–04:30 Лиссабон: инкрементальный poll (watermark по updated_at + перечитка свежих заметок), 0-LLM; exponential backoff на 429/5xx.
 4. **Скилл `/granola-sync` переписать с MCP на API** (та же логика, другой транспорт).

@@ -70,7 +70,7 @@ tags: [decision, cofounder, ambient-agent, event-driven, salience, digital-twin,
 Только после greenlight Антона — реализация Phase 0.
 
 ## Открытые вопросы
-Порог салиентности (калибруется на реальных событиях Phase 0); где именно крутить диспетчер (хаб `A-2022BAYAREA`, всегда-вкл — по умолчанию); частота дайджеста (нач. 2–3×/день, вне ночного окна).
+Порог салиентности (калибруется на реальных событиях Phase 0); где именно крутить диспетчер (всегда-включённый хаб — по умолчанию); частота дайджеста (нач. 2–3×/день, вне ночного окна).
 
 ## Связи
 [[decision-synthetic-cofounder]] · [[decision-long-horizon-attention-layer-2026-06-18]] · [[telegram-eventloop-listener]] · [[cc-alerts-to-chat-03]] · [[vault-data-architecture]] · [[model-routing-sonnet-grunt]] · [[operating-agreement]] · [[prefer-visual-dashboards]] · [[insight-glavnaya-tsel-tsifrovoj-dvojnik]] · [[alpha-protocol-recall-plus-dr]]

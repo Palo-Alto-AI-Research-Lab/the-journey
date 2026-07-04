@@ -7,8 +7,8 @@ May was about pouring a life into a box. June is about what happens when the box
 ## Chapters
 
 - [Week 1 (Jun 1-7)](week-1/) — *life principles, a near-catastrophe, and the first content factory*
-- Week 2 (Jun 8-14) — coaching, imports, and "search the vault first"
-- Week 3 (Jun 15-21) — the decision-memo era: architecture crystallizes
-- Week 4 (Jun 22-28) — the multi-machine platform and the roads not taken
+- [Week 2 (Jun 8-14)](week-2/) — *coaching, imports, and "search the vault first"*
+- [Week 3 (Jun 15-21)](week-3/) — *the decision-memo era: architecture crystallizes*
+- Week 4 (Jun 22-28) — *the multi-machine platform and the roads not taken*
 
 *Note: 2026-06-02 → 06-05 is a quiet stretch (no sessions).*

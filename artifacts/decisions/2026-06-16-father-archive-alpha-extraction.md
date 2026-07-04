@@ -26,12 +26,12 @@ tags:
 
 ## 1. Проблема
 
-Архив переписки с отцом собран и разложен ([[_Perepiska-s-Ottsom-MOC]] — 623 письма, 2015–2020; саммари [[Mudrost-ottsa-chto-govoril-Oleg-Stefanovich]]). Вопрос: **как из него системно вынимать ценность** — мировоззрение, принципы, советы, фактуру рода — так, чтобы это было (а) невыдуманным и проверяемым, (б) кирпичом цифрового двойника, а не разовой прозой.
+Архив переписки с отцом собран и разложен ([[_Perepiska-s-Ottsom-MOC]] — 623 письма, 2015–2020; саммари [[Mudrost-ottsa-summary]]). Вопрос: **как из него системно вынимать ценность** — мировоззрение, принципы, советы, фактуру рода — так, чтобы это было (а) невыдуманным и проверяемым, (б) кирпичом цифрового двойника, а не разовой прозой.
 
 ## 2. Что мы уже знаем (Recall)
 
-- **Слой-доказательство уже есть:** годовые заметки + `dump\messages.json` (812 копий → 633 уникальных по RFC `Message-ID`), у каждого письма дата, отправитель, текст, вложения. Провенанс: письма отца `origin: Олег Стефанович`, ответы Антона `#anton-original`.
-- **Первая интерпретация уже есть:** [[Mudrost-ottsa-chto-govoril-Oleg-Stefanovich]] — проза (мировоззрение, 12 тем, принципы, 15 цитат). Это v0 — НЕ привязано к точным цитатам построчно.
+- **Слой-доказательство уже есть:** годовые заметки + `dump\messages.json` (812 копий → 633 уникальных по RFC `Message-ID`), у каждого письма дата, отправитель, текст, вложения. Провенанс: письма отца `origin: отец`, ответы Антона `#anton-original`.
+- **Первая интерпретация уже есть:** [[Mudrost-ottsa-summary]] — проза (мировоззрение, 12 тем, принципы, 15 цитат). Это v0 — НЕ привязано к точным цитатам построчно.
 - **RAG уже есть:** `brain_ask.py` (e5 + reranker) — архив переиндексирован, отвечает «архивным режимом» уже сейчас.
 - **Движок «дешёвый детектор → дорогой судья» уже есть:** [[decision-alpha-extraction-engine-variant-a|Alpha-extraction engine]] (10 майнеров) + [[insight-prediction-ledger]] — готовый дом для решений/прогнозов Антона.
 - **Север:** [[insight-glavnaya-tsel-tsifrovoj-dvojnik|Главная цель #1]] #1 = цифровой двойник; влияние отца на Антона = identity-данные двойника.
@@ -80,7 +80,7 @@ DR почти один-в-один ложится на то, что у нас у
 
 ## Связи
 
-- [[_Perepiska-s-Ottsom-MOC]] · [[Mudrost-ottsa-chto-govoril-Oleg-Stefanovich]] · [[concept-genealogy]]
+- [[_Perepiska-s-Ottsom-MOC]] · [[Mudrost-ottsa-summary]] · [[concept-genealogy]]
 - [[insight-glavnaya-tsel-tsifrovoj-dvojnik|Главная цель #1]] #1 · [[_Self-Bible-MOC|Self-Bible identity-слой]] · [[concept-digital-immortality]] · [[concept-second-brain-ingest-pipeline|Второй Мозг (north star)]]
 - [[decision-alpha-extraction-engine-variant-a|Alpha-extraction engine]] · [[insight-prediction-ledger]] · [[concept-second-brain-ingest-pipeline|3-слойная архитектура волта]]
-- Источник DR: `C:\Users\_\Downloads\parent deep-research-report.md` (внешний отчёт, принёс Антон 2026-06-16)
+- Источник DR: внешний отчёт, принёс Антон 2026-06-16
