@@ -40,6 +40,7 @@ Every active-day **human** chapter has FOUR parts, in order, and **MUST contain 
 2. 🏆 **The main story** — the single most important session (e.g. the birth of Mike). Full duet mini-episode, the emotional centerpiece.
 3. 🎞 **Also today** — EVERY other meaningful session/dialogue that day (even unfinished ones), each as its own tight mini-episode (a scene + a Тони or Майк beat). One per meaningful session.
 4. 🧒 **We learned a lot today** — end-of-day summary: the lessons, the throughline, what the day meant.
+5. 📎 **Артефакты и Deep Research** (MANDATORY) — a table of that day's REAL artifacts/DRs: `Артефакт · что это (1 line) · автор (🤖 Claude / 🧠 GPT / 💎 Gemini / 🦋 Grok / 🧠 внешний DR) · дата · clickable link to the .md`. Publish the SAFE ones into `artifacts/{deep-research,decisions,protocols}/` (leak-scan each first: no PII/creds/financials/lead-data/OSINT). Sensitive artifacts get a one-line description + honest "(в приватном репо/волте, не публикуем)" instead of a link. Sources live at `_originals/deep-research/` (78 DR files) + `02-Decisions/` + `05-Resources/Protocols/`.
 
 **Completeness (MANDATORY):** the extractor enumerates ALL sessions of the day, marks each meaningful/not, and every meaningful one appears as at least a mini-episode. Unfinished session → say so. Nothing meaningful is silently dropped. A session is "meaningful" if it produced a decision, a build, a lesson, a rake, an artifact, or a notable exchange — not pure status-checks/noise.
 
