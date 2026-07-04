@@ -32,6 +32,8 @@ Quiet days (no session logs) are NOT files; they are folded into the week README
 
 ## Day chapter anatomy (rich format)
 
+> Writing craft — pacing, triage, personifying resistance, borrowing from the influences, before/after examples — lives in [`PLAYBOOK.md`](PLAYBOOK.md). Governing principle: **narrate by resistance, not by volume; the atomic unit of drama is the moment a model of reality breaks.**
+
 Every active-day **human** chapter has FOUR parts, in order, and **MUST contain every meaningful session of that day — nothing dropped**:
 
 1. 🎬 **Cold open + TLDR** — "This is Day XX. Today: A, B, C." A short, punchy overview of the whole day and what we achieved. Super-important but brief; sets the day's arc.
