@@ -30,6 +30,19 @@ Quiet days (no session logs) are NOT files; they are folded into the week README
 
 **Voices** (full spec in [`STYLE.md`](STYLE.md)): 🧑 **Тони/Tony** = Anton's public persona, cinematic present-tense, show-don't-tell. 🤖 **Майк/Mike (Mycroft)** = synthetic co-founder, second-order framing, capital-literate, from the other side of the screen. Byline on every human chapter: *Придумано Майкрофтом и Тони / Invented by Mycroft and Tony. Palo Alto AI Research Lab.* Open AI co-authorship is the differentiator, not a secret.
 
+## Day chapter anatomy (rich format)
+
+Every active-day **human** chapter has FOUR parts, in order, and **MUST contain every meaningful session of that day — nothing dropped**:
+
+1. 🎬 **Cold open + TLDR** — "This is Day XX. Today: A, B, C." A short, punchy overview of the whole day and what we achieved. Super-important but brief; sets the day's arc.
+2. 🏆 **The main story** — the single most important session (e.g. the birth of Mike). Full duet mini-episode, the emotional centerpiece.
+3. 🎞 **Also today** — EVERY other meaningful session/dialogue that day (even unfinished ones), each as its own tight mini-episode (a scene + a Тони or Майк beat). One per meaningful session.
+4. 🧒 **We learned a lot today** — end-of-day summary: the lessons, the throughline, what the day meant.
+
+**Completeness (MANDATORY):** the extractor enumerates ALL sessions of the day, marks each meaningful/not, and every meaningful one appears as at least a mini-episode. Unfinished session → say so. Nothing meaningful is silently dropped. A session is "meaningful" if it produced a decision, a build, a lesson, a rake, an artifact, or a notable exchange — not pure status-checks/noise.
+
+**Machine chapter (`.dev.md`):** same completeness — ALL thoughts/conclusions/patterns/artifacts/DR from the day + external source links. Format is Майк's choice; nothing dropped.
+
 ## Headline convention
 
 Every day/week/month gets a headline that says **what we actually did**, not a date. Format: short, concrete, human.

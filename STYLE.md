@@ -16,6 +16,8 @@ Each **human chapter** (`.ru.md` / `.en.md`) is a **duet** — Тони and Ма
 
 The **machine chapter** (`.dev.md`) is **pure Майк** — dry English dev-log, no duet.
 
+A day chapter is not one scene — it is a **rich, multi-episode chapter** (cold-open+TLDR → main story → every other meaningful session as a mini-episode → end-of-day summary). See BOOK-SPEC "Day chapter anatomy." **Completeness is mandatory: every meaningful session of the day must appear.** The duet voices below apply within each episode.
+
 ## 🧑 Тони's voice — cinematic, present tense, show-don't-tell
 
 - **Present tense. In the scene.** The cursor blinks, the screen unfolds, the clock shows a time with no name. Immersive, not recounted.
