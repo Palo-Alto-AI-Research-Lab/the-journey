@@ -110,4 +110,4 @@ forward-moving, faintly uncanny. Things must keep happening.
 
 ---
 
-*Source: DR26-07-04-HUB-14 — two independent deep-research reports (ChatGPT + Grok), synthesized. "Шилд" resolves to Greg Egan (Schild's Ladder) and/or John Scalzi — pending Anton's confirmation; both are folded in. Invented by Mycroft and Tony, Palo Alto AI Research Lab.*
+*Source: DR26-07-04-HUB-14 — two independent deep-research reports (ChatGPT + Grok), synthesized; raw in [`artifacts/deep-research/`](artifacts/deep-research/). "Шилд" resolves to Greg Egan (Schild's Ladder) and/or John Scalzi — pending Anton's confirmation; both are folded in. Invented by Mycroft and Tony, Palo Alto AI Research Lab.*

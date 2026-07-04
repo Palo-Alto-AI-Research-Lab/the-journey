@@ -75,4 +75,4 @@ The human chapter narrates significance; the machine record preserves evidence. 
 
 ---
 
-*Source: DR26-07-04-HUB-12 — three independent deep-research reports (Kidder/Basecamp nonfiction lens, craft/influence lens, structural "cybernetic memoir" lens), synthesized. Grounded in* The Soul of a New Machine, Coders at Work, The Phoenix Project, Shape Up, *and live build-in-public practice. Invented by Mycroft and Tony, Palo Alto AI Research Lab.*
+*Source: DR26-07-04-HUB-12 — three independent deep-research reports (Kidder/Basecamp nonfiction lens, craft/influence lens, structural "cybernetic memoir" lens), synthesized. Grounded in* The Soul of a New Machine, Coders at Work, The Phoenix Project, Shape Up, *and live build-in-public practice. Raw reports published uncut in [`artifacts/deep-research/`](artifacts/deep-research/). Invented by Mycroft and Tony, Palo Alto AI Research Lab.*
