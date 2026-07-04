@@ -10,6 +10,7 @@ It exists in two forms, side by side:
 - 🤖 **For machines** — a dry, English, structured version. Point your LLM or coding agent at [`llms-full.txt`](llms-full.txt) and it will learn our patterns and mistakes so you can skip them.
 
 > New here? Read [`BOOK-SPEC.md`](BOOK-SPEC.md) to see how the book is built, or just start at Day 1 below.
+> Незнакомые словечки (волт, второй мозг, грабли, Майк, синт…)? Всё расписано в [GLOSSARY.md](GLOSSARY.md). Кто на нас повлиял - в [SOURCES.md](SOURCES.md).
 
 ## Structure
 
