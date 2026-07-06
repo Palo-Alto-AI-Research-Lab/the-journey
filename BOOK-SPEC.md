@@ -32,7 +32,7 @@ Quiet days (no session logs) are NOT files; they are folded into the week README
 
 ## Day chapter anatomy (rich format)
 
-> Writing craft — pacing, triage, personifying resistance, borrowing from the influences, before/after examples — lives in [`PLAYBOOK.md`](PLAYBOOK.md). Governing principle: **narrate by resistance, not by volume; the atomic unit of drama is the moment a model of reality breaks.**
+> Writing craft — pacing, triage, personifying resistance, borrowing from the influences, before/after examples — lives in [`PLAYBOOK.md`](PLAYBOOK.md). Governing principle: **narrate by resistance, not by volume; the atomic unit of drama is the moment a model of reality breaks.** Visual language (block semaphore, alert budget max 2/chapter, rhythm norms, theme-aware images) lives in [`STYLE-VISUAL.md`](STYLE-VISUAL.md).
 
 Every active-day **human** chapter has FOUR parts, in order, and **MUST contain every meaningful session of that day — nothing dropped**:
 
