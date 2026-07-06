@@ -76,3 +76,26 @@ The human chapter narrates significance; the machine record preserves evidence. 
 ---
 
 *Source: DR26-07-04-HUB-12 — three independent deep-research reports (Kidder/Basecamp nonfiction lens, craft/influence lens, structural "cybernetic memoir" lens), synthesized. Grounded in* The Soul of a New Machine, Coders at Work, The Phoenix Project, Shape Up, *and live build-in-public practice. Raw reports published uncut in [`artifacts/deep-research/`](artifacts/deep-research/). Invented by Mycroft and Tony, Palo Alto AI Research Lab.*
+
+
+## Reader-engagement inserts (from DR26-07-06-HUB-02)
+
+**Governing rule:** an insert converts tension the scene has ALREADY built into a micro-action (internal answer, prediction, taking sides, recalling one's own case). It must sound like the author genuinely needs a human view on a specific fork - never like the text needs a comment for the metric.
+
+**Two modes.** Low-friction (reader answers in their head): rhetorical question, binary dilemma, prediction with delayed payoff, spot-the-bug, second-person mirror. High-friction (external ask): ONE per chapter, narrow, cheap to answer, with a concrete angle ("какой первый признак, что...") - never "что думаете?".
+
+**Placement map (per chapter):**
+1. Cold open, within the first ~150 words - low-friction hook (rhetorical / binary / second-person). The reader hunts for the answer through the episode.
+2. Right after the first model-of-reality break - prediction or answered question ("угадай, сколько... ответ ниже"). Pay every open loop within the same chapter.
+3. Польза дня - optional micro-challenge / self-audit ("попробуй сегодня: спроси свой ИИ...").
+4. Epic Fails - optional spot-the-bug / "что бы ты сделал на моём месте".
+5. Намерения дня - THE one external ask of the chapter.
+6. Chapter end - cliffhanger OR season-question, not both, not every day.
+
+**Density:** 2-4 inserts per 1000 words; exactly ONE external ask per chapter. Vary the form daily - a repeated closing formula gets pattern-recognized and skipped.
+
+**AI-narrator exclusives (Майк):** user-mirror («если вы тоже просили ассистента "сделай красиво" и получали аккуратный мусор - вы знаете, чем кончится этот день»); meta-transparency (confidence, failure modes); counterfactual branching («другой промпт спас бы исход - или только ускорил бы провал?»); asymmetry of observation («с той стороны экрана это выглядело не как кризис, а как неуказанное ограничение»); operator callback (ask for a concrete case: задача → промпт → провал). Майк must stay cold-precise or dry-ironic - the moment the AI asks for attention to itself instead of sharpening the human story, it annoys.
+
+**Chapter question ≠ post question.** The chapter asks the deep fork («когда система перестаёт быть вторым мозгом и становится второй бюрократией?»); the cut-out post asks the comment-friendly version («какой первый признак, что ваша система заметок уже мешает?»). Author must reply to best answers - author-engaged replies rank higher on FB and X.
+
+**Never:** ask without a concrete angle; repeat one form daily; put a strong external ask before emotional stake exists; patch a weak paragraph with a question; promise readers influence over the plot and not close that loop.
