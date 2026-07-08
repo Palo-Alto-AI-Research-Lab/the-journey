@@ -1,4 +1,4 @@
-# BOOK-SPEC — "The Journey"
+# BOOK-SPEC — "相棒 · AIBŌ · The Partner" (THE JOURNEY with Claude Code)
 
 > The contract for how every part of this book is built. Read this before generating any chapter.
 > One source of truth. Every day-chapter follows this spec exactly, so the book is consistent and re-generatable.

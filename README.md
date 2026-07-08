@@ -1,4 +1,6 @@
-# The Journey
+# 相棒 · AIBŌ · The Partner
+
+> *THE JOURNEY with Claude Code*
 
 **How one non-technical founder and an AI built a second brain, day by day.**
 
