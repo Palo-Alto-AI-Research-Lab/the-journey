@@ -1,5 +1,7 @@
 # THREADS — the running arcs (season bible)
 
+> ⛔ FROZEN 2026-07-08 — story-state moved to the single canon in the vault: `Anton-Knowledge\04-Projects\show-canon\` (book projection = `views\book.base`). This file is kept for history/migration; do not treat it as the source. Decision: `decision-single-canon-story-state` · DR26-07-08-HUB-01.
+>
 > Internal writing aid: the long threads, recurring motifs, and milestones to keep consistent and pay off across all day-chapters. Update as days are written so callbacks land.
 
 ## Character arcs (evolve slowly, revisit every 5-6 chapters — not every day)
