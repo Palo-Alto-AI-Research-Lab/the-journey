@@ -9,7 +9,7 @@
 ## Стандарт честности
 > Никогда не рассказывать навык/тягу/уверенность выше, чем поддерживают факты.
 
-- **Story day:** 43 · live as of 2026-07-08
+- **Story day:** 40  # книжная нумерация (тихие дни свёрнуты); календарных 45 · live as of 2026-07-10
 - **Активные арки:** [arc-llm-hire](ARCS.md#arc-llm-hire) · [arc-swarm-consensus](ARCS.md#arc-swarm-consensus)
 - **Открытые петли:** [loop-consensus-holds](LOOPS.md#loop-consensus-holds) · [loop-llm-offer](LOOPS.md#loop-llm-offer)
 - **Каст:** [cast-tony](CAST.md#cast-tony) · [cast-mike](CAST.md#cast-mike)
