@@ -11,6 +11,7 @@
 - [День 39 — 8 июля: эта книга перестала быть источником](2026-07-08.ru.md) · [EN](2026-07-08.en.md) · [🤖 machine](2026-07-08.dev.md) — *"ПОДОЖДИ. Реши КОРЕНЬ" - the single story canon is born; this very book becomes a projection*
 - *9 июля — тихий день: одна ночная правка канона (tie-break вооружён на якорной ноде), глав нет.*
 - [День 40 — 10 июля: книга догнала своё настоящее](2026-07-10.ru.md) · [EN](2026-07-10.en.md) · [🤖 machine](2026-07-10.dev.md) — *the canon goes public (sealed spoilers and all), six Fable writers close a month of translation debt in 20 minutes, and the chapter is written on the day it describes*
+- [День 41 — 11 июля: сезон вышел в эфир](2026-07-11.ru.md) · [EN](2026-07-11.en.md) · [🤖 machine](2026-07-11.dev.md) — *the season pilot goes public, the swarm gets its first runnable proof (one-command evals), the content machine closes its loop, and overnight the fleet moves out of the house onto an always-on cloud node*
 
 **Новое для читателя на этой неделе:** [🗺 canon/](../../canon/README.md) - публичная карта истории (сезон, каст, арки, биты, открытые петли, правила). Книга, посты и dev-log теперь рендерятся из одной коробки фактов.
 
