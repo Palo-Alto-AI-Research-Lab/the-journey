@@ -1,0 +1,18 @@
+# Anton Dzyatkovsky — AI systems builder, in public
+
+> A non-technical founder running a multi-machine agentic AI system — a "second brain" that reasons, argues, self-heals and runs 24/7 across a fleet of machines. Built in public, day by day, as a duet between a human (Tony) and a synthetic co-founder (Mycroft). Targeting DevRel / Applied AI / Developer Education / Forward-Deployed roles at frontier AI labs.
+
+## The artifact
+- [The Journey (build-in-public book)](https://github.com/Palo-Alto-AI-Research-Lab/the-journey): daily human+machine-readable log of building the system — what we tried, what broke, what we learned.
+- [llms-full.txt](https://raw.githubusercontent.com/Palo-Alto-AI-Research-Lab/the-journey/main/llms-full.txt): full machine-readable dump of the book — point your LLM here to learn our multi-agent patterns and the rakes we stepped on.
+- [Palo Alto AI Research Lab](https://github.com/Palo-Alto-AI-Research-Lab): the org.
+
+## What it demonstrates
+- Multi-agent orchestration: a fleet of always-on machines running Claude agents that reach consensus, self-heal, and propagate-and-verify changes across the whole system.
+- Second brain / digital twin: a life imported into a vault with semantic recall + deterministic facts.
+- Reliability engineering over demos: consensus failure-modes, leader-down handling, sync-conflict recovery — measured, not hand-waved.
+- Openly AI-co-authored: human designs and pressure-tests; agents do the typing. The co-authorship is the differentiator.
+
+## Background
+- Grew builder ecosystems in Web3 & OTC — hackathons, cohort incubation, grants — framed as developer activation with measurable conversion to production.
+- Reachable on X (@Tony_Stef_) and via The Journey.
