@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use the-journey in research or software, please cite it as below."
+title: "the-journey"
+type: software
+authors:
+  - family-names: Dziatkovskii
+    given-names: Anton
+    orcid: "https://orcid.org/0000-0001-7408-3054"
+    affiliation: "Palo Alto AI Research Lab"
+repository-code: "https://github.com/Palo-Alto-AI-Research-Lab/the-journey"
+url: "https://github.com/Palo-Alto-AI-Research-Lab/the-journey"
+abstract: >-
+  The Journey — a build-in-public book of a 60-day founder+AI collaboration. Two voices (Tony & Mycroft), human + machine readable. Palo Alto AI Research Lab.
