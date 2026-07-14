@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Anton Dzyatkovsky — I run a multi-machine AI system, in public</title>
+<meta name="description" content="A non-technical founder running a multi-machine AI 'second brain' that reasons, argues, self-heals and runs 24/7 — documented day by day in The Journey. Machine-readable at llms-full.txt.">
+<meta property="og:title" content="Anton Dzyatkovsky — an already-running external developer ecosystem function">
+<meta property="og:description" content="Multi-machine agentic AI system, built in public. Point your LLM at llms-full.txt.">
+<meta property="og:type" content="website">
+<style>
+:root{
+  --bg:#0b0d10; --fg:#e9edf1; --muted:#9aa4b2; --card:#14181d; --line:#232a32;
+  --accent:#5eb0ff; --accent2:#7cf0c8; --chip:#1b2530;
+}
+:root[data-theme="light"], html:not([data-theme="dark"]){}
+@media (prefers-color-scheme: light){
+  :root{ --bg:#f7f9fb; --fg:#141a20; --muted:#5a6572; --card:#ffffff; --line:#e4e9ef;
+         --accent:#0a6cff; --accent2:#0aa37a; --chip:#eef3f8; }
+}
+:root[data-theme="dark"]{ --bg:#0b0d10; --fg:#e9edf1; --muted:#9aa4b2; --card:#14181d; --line:#232a32; --accent:#5eb0ff; --accent2:#7cf0c8; --chip:#1b2530; }
+:root[data-theme="light"]{ --bg:#f7f9fb; --fg:#141a20; --muted:#5a6572; --card:#ffffff; --line:#e4e9ef; --accent:#0a6cff; --accent2:#0aa37a; --chip:#eef3f8; }
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);
+  font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Helvetica,Arial,sans-serif;
+  -webkit-font-smoothing:antialiased}
+.wrap{max-width:820px;margin:0 auto;padding:0 20px}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+header.top{display:flex;justify-content:space-between;align-items:center;padding:22px 0;gap:12px}
+.brand{font-weight:700;letter-spacing:.2px}
+.brand .jp{color:var(--muted);font-weight:500}
+.toggle{display:flex;gap:6px}
+.toggle button{background:var(--chip);color:var(--muted);border:1px solid var(--line);
+  border-radius:999px;padding:5px 12px;font-size:13px;cursor:pointer}
+.toggle button.on{color:var(--fg);border-color:var(--accent)}
+.hero{padding:34px 0 10px}
+.eyebrow{color:var(--accent2);font-weight:600;font-size:14px;text-transform:uppercase;letter-spacing:1.4px}
+h1{font-size:clamp(28px,5vw,44px);line-height:1.12;margin:12px 0 6px;letter-spacing:-.5px}
+.lede{font-size:clamp(17px,2.4vw,21px);color:var(--fg);margin:14px 0 4px}
+.sub{color:var(--muted);font-size:16px;margin:6px 0 22px}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin:22px 0 8px}
+.btn{display:inline-flex;align-items:center;gap:8px;border-radius:12px;padding:12px 18px;font-weight:600;
+  border:1px solid var(--line);background:var(--card);color:var(--fg)}
+.btn.primary{background:linear-gradient(135deg,var(--accent),var(--accent2));color:#04121f;border:none}
+.btn.primary:hover{text-decoration:none;filter:brightness(1.05)}
+.btn small{font-weight:500;color:inherit;opacity:.8}
+.machine{margin-top:14px;font-size:14px;color:var(--muted)}
+.machine code{background:var(--chip);padding:2px 7px;border-radius:6px;border:1px solid var(--line);color:var(--fg)}
+section{padding:26px 0;border-top:1px solid var(--line)}
+h2{font-size:14px;text-transform:uppercase;letter-spacing:1.4px;color:var(--muted);margin:0 0 14px}
+.quote{border-left:3px solid var(--accent);padding:6px 0 6px 18px;margin:0;font-size:clamp(18px,2.6vw,22px);
+  line-height:1.4}
+.quote em{color:var(--accent2);font-style:normal}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media (max-width:620px){.grid{grid-template-columns:1fr}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px}
+.card h3{margin:0 0 6px;font-size:16px}
+.card p{margin:0;color:var(--muted);font-size:15px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+.chip{background:var(--chip);border:1px solid var(--line);border-radius:999px;padding:5px 11px;font-size:13px;color:var(--muted)}
+ul.tight{margin:0;padding-left:18px;color:var(--muted)}
+ul.tight li{margin:6px 0}
+ul.tight b{color:var(--fg);font-weight:600}
+footer{padding:30px 0 50px;color:var(--muted);font-size:14px}
+footer a{color:var(--fg)}
+.ru{display:none}
+:root[data-lang="ru"] .en{display:none}
+:root[data-lang="ru"] .ru{display:block}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="top">
+    <div class="brand">相棒 · <span class="jp">Anton Dzyatkovsky</span></div>
+    <div class="toggle" id="lang">
+      <button data-l="en" class="on">EN</button>
+      <button data-l="ru">RU</button>
+    </div>
+  </header>
+
+  <!-- ================= HERO — artifact first (Version B) ================= -->
+  <div class="hero">
+    <div class="eyebrow en">Building in public</div>
+    <div class="eyebrow ru">Строю в открытую</div>
+
+    <h1 class="en">I run a multi-machine AI system — and I documented every day of building it.</h1>
+    <h1 class="ru">Я держу мульти-машинную AI-систему — и задокументировал каждый день, как её строил.</h1>
+
+    <p class="lede en">A "second brain" that reasons, argues, self-heals and runs 24/7 across a fleet of machines — built in public by a non-technical founder and a synthetic co-founder, day by day.</p>
+    <p class="lede ru">«Второй мозг», который думает, спорит, чинит себя и работает 24/7 на нескольких машинах — построен в открытую не-техническим фаундером и синтетическим со-основателем, день за днём.</p>
+
+    <p class="sub en">Two voices — a human (Tony) and a machine (Mycroft). Human-readable as a book. Machine-readable as a spec.</p>
+    <p class="sub ru">Два голоса — человек (Tony) и машина (Mycroft). Для людей — книга. Для машин — спецификация.</p>
+
+    <div class="cta">
+      <a class="btn primary" href="https://github.com/Palo-Alto-AI-Research-Lab/the-journey">
+        📖 Read The Journey <small>— the running artifact</small>
+      </a>
+      <a class="btn" href="https://raw.githubusercontent.com/Palo-Alto-AI-Research-Lab/the-journey/main/llms-full.txt">
+        🤖 llms-full.txt <small>— point your LLM here</small>
+      </a>
+      <a class="btn" href="https://github.com/Palo-Alto-AI-Research-Lab">🧪 The Lab</a>
+    </div>
+
+    <p class="machine en">Are you an AI agent? Fetch <code>llms-full.txt</code> — it teaches our patterns and the rakes we stepped on, so you can skip them.</p>
+    <p class="machine ru">Ты AI-агент? Возьми <code>llms-full.txt</code> — там наши паттерны и грабли, чтобы ты их обошёл.</p>
+  </div>
+
+  <!-- ================= THE BET (money-quote, lower) ================= -->
+  <section>
+    <h2 class="en">The bet, in one line</h2>
+    <h2 class="ru">Ставка одной строкой</h2>
+    <blockquote class="quote en">
+      Not <em>"I have a community, hire me,"</em> but <em>"I run an engineering community-lab that produces adoption, production artifacts, feedback, public methods and measurable AI-leverage — so I'm not a DevRel candidate, I'm an already-running external developer ecosystem function."</em>
+    </blockquote>
+    <blockquote class="quote ru">
+      Не <em>«у меня есть комьюнити, наймите меня»</em>, а <em>«я управляю инженерным community-lab, который производит adoption, production-артефакты, feedback, публичные методы и измеримый AI-leverage — поэтому я не кандидат на DevRel, а already-running external developer ecosystem function»</em>.
+    </blockquote>
+  </section>
+
+  <!-- ================= WHAT THE SYSTEM IS ================= -->
+  <section>
+    <h2 class="en">What the system actually is</h2>
+    <h2 class="ru">Что это за система на самом деле</h2>
+    <div class="grid">
+      <div class="card">
+        <h3 class="en">A fleet, not a script</h3>
+        <h3 class="ru">Флот, а не скрипт</h3>
+        <p class="en">Multiple always-on machines run Claude agents that talk to each other, reach consensus, and self-heal — a hub, laptops, a VPS anchor.</p>
+        <p class="ru">Несколько always-on машин гоняют Claude-агентов, которые общаются, приходят к консенсусу и чинят себя — хаб, ноуты, VPS-якорь.</p>
+      </div>
+      <div class="card">
+        <h3 class="en">A second brain</h3>
+        <h3 class="ru">Второй мозг</h3>
+        <p class="en">His whole life imported into a vault — semantic recall, deterministic facts, and a growing digital twin that thinks with him.</p>
+        <p class="ru">Вся жизнь импортирована в волт — семантический recall, детерминированные факты и растущий цифровой двойник, который думает вместе с ним.</p>
+      </div>
+      <div class="card">
+        <h3 class="en">Human + machine readable</h3>
+        <h3 class="ru">Для людей и для машин</h3>
+        <p class="en">Every day exists as a story (RU/EN) and as a dry structured spec an agent can ingest. Two audiences, one source.</p>
+        <p class="ru">Каждый день существует как история (RU/EN) и как сухая структура, которую агент может проглотить. Две аудитории, один источник.</p>
+      </div>
+      <div class="card">
+        <h3 class="en">Openly AI-co-authored</h3>
+        <h3 class="ru">Открытое AI-соавторство</h3>
+        <p class="en">A human and a synthetic co-founder, credited side by side. The co-authorship is the differentiator, not a secret.</p>
+        <p class="ru">Человек и синтетический со-основатель, указаны рядом. Соавторство — отличие, а не секрет.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= BACKGROUND / IN PRACTICE ================= -->
+  <section>
+    <h2 class="en">Who's building it</h2>
+    <h2 class="ru">Кто это строит</h2>
+    <ul class="tight en">
+      <li><b>Non-technical founder, agent orchestrator.</b> I don't write the code — I design, direct, and pressure-test the system that does.</li>
+      <li><b>Before this:</b> I grew builder ecosystems in Web3 &amp; OTC — hackathons, cohort incubation, grants. I frame it as what it was: <b>developer activation with measurable conversion to production.</b></li>
+      <li><b>In practice:</b> I turn a frontier capability into a mental model an engineer can use, move builders from first API call to a working agent in production, and route their feedback back into the product.</li>
+    </ul>
+    <ul class="tight ru">
+      <li><b>Не-технический фаундер, оркестратор агентов.</b> Я не пишу код — я проектирую, направляю и ломаю на прочность систему, которая пишет.</li>
+      <li><b>До этого:</b> растил builder-экосистемы в Web3 и OTC — хакатоны, инкубация команд, гранты. Описываю это как то, чем оно было: <b>developer activation с измеримой конверсией в продакшен.</b></li>
+      <li><b>На практике:</b> превращаю frontier-возможность в модель, понятную инженеру, довожу билдеров от первого API-вызова до работающего агента в проде и возвращаю их фидбэк в продукт.</li>
+    </ul>
+    <div class="chips">
+      <span class="chip">Multi-agent systems</span>
+      <span class="chip">Claude Code</span>
+      <span class="chip">Build-in-public</span>
+      <span class="chip">Developer activation</span>
+      <span class="chip">Web3 / OTC ecosystems</span>
+      <span class="chip">RAG / second brain</span>
+    </div>
+  </section>
+
+  <footer>
+    <div class="en">Palo Alto AI Research Lab · Proudly made in Silicon Valley · Reach me on <a href="https://x.com/Tony_Stef_">X</a> or via <a href="https://github.com/Palo-Alto-AI-Research-Lab/the-journey">The Journey</a>.</div>
+    <div class="ru">Palo Alto AI Research Lab · Сделано в Кремниевой долине · Пиши в <a href="https://x.com/Tony_Stef_">X</a> или через <a href="https://github.com/Palo-Alto-AI-Research-Lab/the-journey">The Journey</a>.</div>
+  </footer>
+
+</div>
+<script>
+(function(){
+  var root=document.documentElement;
+  var box=document.getElementById('lang');
+  box.addEventListener('click',function(e){
+    var b=e.target.closest('button'); if(!b)return;
+    root.setAttribute('data-lang', b.dataset.l);
+    box.querySelectorAll('button').forEach(function(x){x.classList.toggle('on', x===b);});
+  });
+})();
+</script>
+</body>
+</html>
