@@ -8,3 +8,4 @@ The honeymoon with the tools is over; the question gets sharp. The system works,
 
 - [Week 5 (Jul 1-5)](week-5/) — *VPS anchor, security product line, and the birth of Mycroft*
 - [Week 6 (Jul 6-12)](week-6/) — *the single story canon: one box of facts, the book catches up with its own present*
+- [Week 7 (Jul 13-19)](week-7/) — *the week that opened on silence: the always-on hub goes dark*
