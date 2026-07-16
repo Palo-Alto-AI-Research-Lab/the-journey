@@ -1,5 +1,7 @@
 # 相棒 · AIBŌ · The Partner
 
+> Who writes this and why → [START-HERE.md](START-HERE.md) · one page of proof: [palo-alto-ai-research-lab.github.io](https://palo-alto-ai-research-lab.github.io/)
+
 > *THE JOURNEY with Claude Code*
 
 **How one non-technical founder and an AI built a second brain, day by day.**
