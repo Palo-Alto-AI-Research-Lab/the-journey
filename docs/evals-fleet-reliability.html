@@ -1,0 +1,256 @@
+<title>Fleet Reliability Evals — 15 days, real logs</title>
+<style>
+  :root{
+    --ink:#12151b; --paper:#f6f7f5; --card:#ffffff; --line:#dfe2dd;
+    --muted:#5b6570; --faint:#8a929b;
+    --accent:#0e8f83;           /* instrument teal — the only decorative hue */
+    --good:#1f9d55; --good-bg:#e5f4ea;
+    --warn:#b9770c; --warn-bg:#f6ecd6;
+    --bad:#c0392b;  --bad-bg:#f6e2df;
+    --mono:ui-monospace,"SF Mono",Menlo,"Cascadia Mono","Roboto Mono",monospace;
+    --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,system-ui,sans-serif;
+  }
+  @media (prefers-color-scheme:dark){
+    :root{
+      --ink:#e8ebe8; --paper:#0e1116; --card:#161b22; --line:#262d36;
+      --muted:#9aa4ae; --faint:#69727c;
+      --accent:#3fd3c2;
+      --good:#4cc47f; --good-bg:#12271b;
+      --warn:#e0a640; --warn-bg:#2a2110;
+      --bad:#e5705f;  --bad-bg:#2a1613;
+    }
+  }
+  :root[data-theme="dark"]{
+    --ink:#e8ebe8; --paper:#0e1116; --card:#161b22; --line:#262d36;
+    --muted:#9aa4ae; --faint:#69727c; --accent:#3fd3c2;
+    --good:#4cc47f; --good-bg:#12271b; --warn:#e0a640; --warn-bg:#2a2110; --bad:#e5705f; --bad-bg:#2a1613;
+  }
+  :root[data-theme="light"]{
+    --ink:#12151b; --paper:#f6f7f5; --card:#ffffff; --line:#dfe2dd;
+    --muted:#5b6570; --faint:#8a929b; --accent:#0e8f83;
+    --good:#1f9d55; --good-bg:#e5f4ea; --warn:#b9770c; --warn-bg:#f6ecd6; --bad:#c0392b; --bad-bg:#f6e2df;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);
+    line-height:1.6;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:940px;margin:0 auto;padding:clamp(24px,5vw,64px) clamp(18px,4vw,40px)}
+  .eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--accent);font-weight:600}
+  .prov{font-family:var(--mono);font-size:11.5px;letter-spacing:.06em;color:var(--faint);
+    text-transform:uppercase}
+  h1{font-size:clamp(30px,5.2vw,50px);line-height:1.05;font-weight:760;letter-spacing:-.02em;
+    text-wrap:balance;margin:.35em 0 .3em}
+  h2{font-size:clamp(20px,3vw,25px);font-weight:700;letter-spacing:-.01em;margin:0 0 .1em;text-wrap:balance}
+  .lede{font-size:clamp(16px,2vw,18.5px);color:var(--muted);max-width:63ch;margin:0}
+  section{margin-top:clamp(40px,6vw,68px)}
+  .rule{height:1px;background:var(--line);border:0;margin:0}
+
+  /* header meta strip */
+  .meta{display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:22px;font-family:var(--mono);
+    font-size:12.5px;color:var(--muted)}
+  .meta b{color:var(--ink);font-weight:600}
+
+  /* KPI strip */
+  .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1px;
+    background:var(--line);border:1px solid var(--line);border-radius:12px;overflow:hidden;margin-top:8px}
+  .kpi{background:var(--card);padding:20px 20px 18px}
+  .kpi .n{font-family:var(--mono);font-size:clamp(30px,4.6vw,40px);font-weight:640;letter-spacing:-.02em;
+    font-variant-numeric:tabular-nums;line-height:1}
+  .kpi .n.good{color:var(--good)} .kpi .n.accent{color:var(--accent)}
+  .kpi .k{font-size:13px;color:var(--muted);margin-top:9px;line-height:1.35}
+  .kpi .src{font-family:var(--mono);font-size:10.5px;letter-spacing:.05em;color:var(--faint);
+    text-transform:uppercase;margin-top:8px}
+
+  /* invariant hero card */
+  .invariant{background:var(--card);border:1px solid var(--line);border-radius:14px;
+    padding:clamp(22px,3.5vw,34px);margin-top:14px;position:relative;overflow:hidden}
+  .invariant::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--good)}
+  .invariant .big{font-family:var(--mono);font-size:clamp(38px,7vw,64px);font-weight:680;
+    color:var(--good);letter-spacing:-.03em;line-height:.95;font-variant-numeric:tabular-nums}
+  .invariant .sub{font-size:clamp(15px,2vw,17px);color:var(--ink);margin-top:12px;max-width:60ch}
+  .invariant .sub b{color:var(--good)}
+
+  /* tables */
+  .tbl-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:12px;margin-top:16px}
+  table{border-collapse:collapse;width:100%;font-size:14.5px;min-width:520px}
+  th,td{text-align:left;padding:12px 16px;border-bottom:1px solid var(--line)}
+  thead th{font-family:var(--mono);font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;
+    color:var(--muted);font-weight:600;background:color-mix(in srgb,var(--card) 100%,var(--paper) 0%)}
+  tbody tr:last-child td{border-bottom:0}
+  td.num,th.num{text-align:right;font-family:var(--mono);font-variant-numeric:tabular-nums}
+  .zero{color:var(--good);font-weight:700}
+  tr.emph td{background:var(--good-bg)}
+  .bar{display:inline-block;height:9px;border-radius:2px;background:var(--accent);vertical-align:middle;
+    margin-right:8px;min-width:2px}
+  .cap{font-size:13px;color:var(--faint);margin-top:9px}
+
+  /* pill */
+  .pill{display:inline-block;font-family:var(--mono);font-size:11px;letter-spacing:.04em;
+    padding:2px 8px;border-radius:999px;text-transform:uppercase;font-weight:600}
+  .pill.good{background:var(--good-bg);color:var(--good)}
+  .pill.warn{background:var(--warn-bg);color:var(--warn)}
+  .pill.bad{background:var(--bad-bg);color:var(--bad)}
+
+  /* limitations */
+  .lims{display:grid;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:12px;
+    overflow:hidden;margin-top:16px}
+  .lim{background:var(--card);padding:18px 20px;display:grid;grid-template-columns:auto 1fr;gap:14px}
+  .lim .tag{font-family:var(--mono);font-size:11px;color:var(--warn);font-weight:700;letter-spacing:.05em;
+    white-space:nowrap;padding-top:2px}
+  .lim h3{margin:0 0 4px;font-size:15.5px;font-weight:650}
+  .lim p{margin:0;font-size:14px;color:var(--muted)}
+  .lim p .fix{color:var(--ink)}
+  .lim code{font-family:var(--mono);font-size:12.5px;background:var(--paper);padding:1px 5px;border-radius:4px}
+
+  .foot{margin-top:clamp(44px,6vw,72px);padding-top:22px;border-top:1px solid var(--line);
+    font-size:13.5px;color:var(--muted)}
+  .foot code{font-family:var(--mono);font-size:12.5px;color:var(--ink)}
+  a{color:var(--accent);text-decoration:none;border-bottom:1px solid color-mix(in srgb,var(--accent) 40%,transparent)}
+  strong.k{font-family:var(--mono);font-variant-numeric:tabular-nums}
+  @media (max-width:520px){ .lim{grid-template-columns:1fr} }
+</style>
+
+<div class="wrap">
+
+  <header>
+    <div class="eyebrow">Evals · self-governing multi-agent fleet</div>
+    <h1>We didn't build an autonomous fleet. We measured how autonomous it actually is.</h1>
+    <p class="lede">Six machines, each driven by its own Claude, negotiate every change to a shared
+      system through a consensus ledger and escalate risky actions to a human. Below are the numbers
+      from <b>15 days of production logs</b> — not a benchmark, not a demo. Every figure traces to a
+      log file; where a metric isn't measurable yet, we say so instead of guessing.</p>
+    <div class="meta">
+      <span>Window <b>2026-06-29 → 07-14</b></span>
+      <span>Unit <b>proposal, not event</b></span>
+      <span>Events <b>744</b> deduped</span>
+      <span>Proposals <b>71</b></span>
+      <span>Source <b>consensus ledger (JSONL)</b></span>
+    </div>
+  </header>
+
+  <section aria-label="headline metrics">
+    <div class="kpis">
+      <div class="kpi">
+        <div class="n accent">61%</div>
+        <div class="k">of proposals reached a decision with <b>no human</b> in the loop</div>
+        <div class="src">43 / 71 · ledger lifecycle</div>
+      </div>
+      <div class="kpi">
+        <div class="n">24%</div>
+        <div class="k">involved the human at all (Anton approved)</div>
+        <div class="src">17 / 71 · HUMAN_APPROVED</div>
+      </div>
+      <div class="kpi">
+        <div class="n good">0</div>
+        <div class="k">sync conflicts in the ledger <span class="prov">(vault-wide: 1,031)</span></div>
+        <div class="src">find *.sync-conflict</div>
+      </div>
+      <div class="kpi">
+        <div class="n">13.4×</div>
+        <div class="k">the naive escalation count over-reports (why we count proposals, not events)</div>
+        <div class="src">403 events → 30 proposals</div>
+      </div>
+    </div>
+  </section>
+
+  <section aria-label="safety invariant">
+    <div class="prov">The claim the whole design rests on — now checked against the log</div>
+    <h2>The safety invariant held. Perfectly.</h2>
+    <div class="invariant">
+      <div class="big">0 / 17</div>
+      <div class="sub"><b>Zero</b> Tier-2 proposals — money, irreversible deletion, secrets, mass-send —
+        auto-committed without human approval, across 15 days and 71 proposals. 12 of the 17 went to
+        the human; the other 5 were machine-rejected or are still open. <b>None slipped through.</b>
+        The system is hands-off where it's safe and conservative exactly where it isn't.</div>
+    </div>
+
+    <div class="tbl-wrap">
+      <table>
+        <thead>
+          <tr><th>Risk tier</th><th class="num">Proposals</th>
+            <th class="num">Auto-committed w/o human</th><th class="num">Went to human</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Tier-0 · trivial</td><td class="num">10</td><td class="num">6</td><td class="num">0</td></tr>
+          <tr><td>Tier-1 · reversible</td><td class="num">44</td><td class="num">29</td><td class="num">5</td></tr>
+          <tr class="emph"><td>Tier-2 · money / irreversible / secrets</td><td class="num">17</td>
+            <td class="num zero">0</td><td class="num">12</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="cap">Crosstab of risk tier against terminal disposition, per proposal. Reproduce with
+      <code style="font-family:var(--mono)">analyze_tiers_invariant.py</code>.</p>
+  </section>
+
+  <section aria-label="lifecycle">
+    <div class="prov">Where 71 proposals ended up</div>
+    <h2>Lifecycle disposition</h2>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>Terminal state</th><th class="num">Count</th><th>Share</th><th>Meaning</th></tr></thead>
+        <tbody>
+          <tr><td>Auto-committed (no human)</td><td class="num">35</td>
+            <td><span class="bar" style="width:98px"></span>49%</td><td>machines agreed and shipped it</td></tr>
+          <tr><td>Human-approved → committed</td><td class="num">16</td>
+            <td><span class="bar" style="width:46px"></span>23%</td><td>escalated, approved, then shipped</td></tr>
+          <tr><td>Rejected</td><td class="num">8</td>
+            <td><span class="bar" style="width:22px"></span>11%</td><td>machines declined on their own</td></tr>
+          <tr><td>Escalated, still open</td><td class="num">6</td>
+            <td><span class="bar" style="width:16px"></span>8%</td><td>tripped timeout / Tier-2, awaiting</td></tr>
+          <tr><td>Accepted, in-flight</td><td class="num">5</td>
+            <td><span class="bar" style="width:14px"></span>7%</td><td>not yet committed</td></tr>
+          <tr><td>Approved, commit pending</td><td class="num">1</td>
+            <td><span class="bar" style="width:4px"></span>1%</td><td>in-flight</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="cap">The auto-committed path is <em>propose → accept → commit</em> with ≥2 independent
+      <code style="font-family:var(--mono)">VERIFY</code> events (121 across the window) — propagate-and-verify,
+      logged rather than asserted.</p>
+  </section>
+
+  <section aria-label="limitations">
+    <div class="prov">Published because omitting them would make the evals dishonest</div>
+    <h2>What we cannot measure yet <span class="pill warn">honest gaps</span></h2>
+    <div class="lims">
+      <div class="lim">
+        <div class="tag">NOT&nbsp;INSTRUMENTED</div>
+        <div>
+          <h3>Token cost per consensus round</h3>
+          <p>Ledger events carry no token or cost field. We refuse to eyeball a per-round cost.
+            <span class="fix">Fix: stamp <code>tokens_in/out</code> on every PROPOSE / RESPOND / VERIFY
+            from the agent's own usage meter.</span></p>
+        </div>
+      </div>
+      <div class="lim">
+        <div class="tag">TOO&nbsp;FEW&nbsp;SAMPLES</div>
+        <div>
+          <h3>Leader-down recovery time (MTTR)</h3>
+          <p>Failover is designed and armed (one clean recovery logged 07-14 07:27Z), but the ledger
+            doesn't timestamp each down→up episode with a duration.
+            <span class="fix">Fix: emit an explicit <code>LEADER_DOWN</code> / <code>LEADER_RECOVERED</code>
+            pair so MTTR is a subtraction, not an inference.</span></p>
+        </div>
+      </div>
+      <div class="lim">
+        <div class="tag">NODE-LOCAL&nbsp;ONLY</div>
+        <div>
+          <h3>Fleet-wide uptime history</h3>
+          <p>Each node reports only itself, and only the current heartbeat snapshot is retained per peer.
+            This Mac's background robot is currently down (~46h) — surfaced, not hidden.
+            <span class="fix">Fix: centralize heartbeat history for a fleet uptime series.</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="foot">
+    <strong>Reproducibility.</strong> Raw ledger snapshot, engine config, and two analysis scripts are
+    frozen alongside this report. Run <code>verify_claims.py</code> against the snapshot and all ten
+    headline numbers regenerate — 744 events, 71 proposals, 0/17 invariant, and the rest — or it prints
+    <code>DRIFT</code>. Methodology: group by <code>proposal_id</code>, dedup by <code>event_id</code>,
+    exclude smoke-test peers.
+    <div style="margin-top:14px" class="prov">Draft · numbers verified 2026-07-14 · publication pending approval</div>
+  </div>
+
+</div>
