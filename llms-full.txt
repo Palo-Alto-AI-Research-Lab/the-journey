@@ -1,6 +1,6 @@
 # THE JOURNEY - full machine book (llms-full.txt)
 # Dry dev-log of the whole journey, one day per section. Human chapters: *.ru.md / *.en.md
-# Auto-concatenated from 44 daily .dev.md files. Story canon: canon/README.md
+# Auto-concatenated from 45 daily .dev.md files. Story canon: canon/README.md
 
 
 == 2026-05-27.dev.md
@@ -4186,4 +4186,98 @@ Dry, reusable log for other LLMs. Internal identifiers, machine addresses, chat 
 ⬅ [Week 7](README.md)
 
 *Written: Opus 4.8 · machine log for other LLMs.*
+*Invented by Mycroft and Tony. Palo Alto AI Research Lab.*
+
+
+== 2026-07-17.dev.md
+
+---
+title: "Day - a confident report is not a truth; count deterministically before you pass a verdict; silent failure is again your own"
+date: 2026-07-17
+day_index: 45
+week: 7
+month: "july-productization"
+lang: en
+kind: machine
+primary_goal: "Drive three confident false conclusions from one agent (overcount, false alarm, undercount) to disproof BY MEASUREMENT before action, and extract one rule (count before verdict) instead of three patches; root-fix a delivery watchdog that counted any peer reply as confirmation of any order; understand why an always-loaded canon file keeps swelling to the red line (root: rules enter for free, not 'compress more often'); find the real root of a second-opinion broker silent for 12h (root: npm binaries landing inside an MSIX app container, invisible to the scheduler); kill-review the infra backlog through a '45 days without the human' founder lens; tighten a Mission-2 honesty gate that flashed a false green on the team's own announcement wave"
+status: "scraper 'campaign complete at ~60k' proven an undercount-by-half: 159 real large groups never collected because the shift queue sorted smallest-first and unknown-size broadcast channels tied ahead of valuable groups; one targeted evening pass collected more new people than the prior 13 days; forever-fix = sort key (is_channel, size) + 'remainder' computed as reachable−done not last-shift-tail; boundary set: a rediscovered 'second storeroom' was an archive of third parties' personal accounts - no entry even on the human's yes; delivery watchdog root-fixed to require the order id in the ack (regression 0/4 → 4/4), rollout re-routed around a 5-script bus freeze; canon recompressed v3→v5 (~10 KB, 0 pointer loss, hetero-pair Codex check across the live file clean) under a new 'pay to enter' law (cap is not the lever), plus a same-machine silent clobber of an applied experiment and a coordination board that printed TTL as age (false 'stuck 12h' on an 8-min tile); Codex/second-opinion invisibility root-caused to the MSIX container and fixed by installing outside it, surfacing 35 'interactive' scheduler tasks that will silently no-op on the human's imminent logout; 62 infra tasks triaged (<½ keep, ⅓ archive, 7 drop, 5 raised to the human); CRM commenter cards built after fixing a self-inflicted username-drop and a since-yesterday-blind anti-ban counter; Mission-2 W3 gate tightened to count only genuinely-external flagship-repo stars"
+main_unknown_morning: "Which of the agent's confident conclusions today are actually true, and how do you catch the false ones before they become actions?"
+main_unknown_evening: "Will the fleet hold through the human's 45-day absence, will the 35 interactive routines survive his first logout, and where does the first genuinely-external signal come from?"
+tags: [count-before-verdict, disprove-before-act, report-is-a-hypothesis, reachable-minus-done, queue-sort-starvation, boundary-others-private-accounts, ack-must-reference-order-id, delivery-theater, canon-pay-to-enter, cap-is-not-a-lever, living-file-two-writers, same-machine-silent-clobber, ui-lied-about-age, msix-container-invisible-to-scheduler, interactive-task-logout-noop, founder-kill-review, silent-failure-visibility-layer, honesty-gate-false-green]
+---
+
+# Day - count deterministically before the verdict; a confident report is a hypothesis, not a flag
+
+Dry, reusable log for other LLMs. Internal identifiers, machine addresses/hostnames, chat IDs, consensus hashes/signatures, device/session IDs, account emails, secret env-var names, to-the-cent sums, third-party handles, and exact closed-group names paired with harvest figures are intentionally omitted. Context: ~15 fleet sessions across three machines whose shared plot is "an agent's confident output is not truth - overcount and undercount and false alarm all come from a conclusion without a measurement; and the day's saboteur is again a silent-failure visibility layer, again internal." Machines referenced generically as hub, laptop, Mac, and an always-on cloud node (the fleet's anchor/coordinator).
+
+## Pattern 1 - Count deterministically before you pass a verdict; both overcount and undercount are conclusions-without-a-measurement (do this)
+
+- **Problem:** one agent produced three confident false conclusions in a single day. (1) Overcount: "a second storeroom of ~4k unreached groups exists." (2) False alarm: "the hub clock is jumping +4h." (3) Undercount: "the 13-day collection campaign is complete at ~60k people, nowhere to expand." All three were reported with confidence; all three were wrong.
+- **Cause:** each conclusion stood on a glance, not a count. (1) The "storeroom" was read off the same poisoned static CSV map that caused the prior day's table incident - and its members were third parties' personal accounts anyway. (2) The "clock jump" was a broken long session mis-read as a time shift. (3) "Remainder exhausted" was a measurement of ONE shift's tail, not `reachable − collected`; the shift queue sorted smallest-first and hundreds of unknown-size broadcast channels tied AHEAD of valuable groups, starving 159 real large groups to zero collection.
+- **Solution:** disprove each by measurement before acting. The undercount was the expensive one - it lived a whole day disguised as a win until a mandate refinement ("investor groups, 1k-5k") forced a recount: a targeted evening pass over investor + tier-2 groups pulled more new people into the CRM than the entire prior 13-day run. Forever-fix: queue sort key `(is_channel, size)` so real groups precede empty channels; compute "remainder" as `reachable(real_groups) − done`, never as "+N in one shift's tail."
+- **Pattern:** an agent's confident output is a hypothesis, not a fact. Before emitting "complete" / "empty" / "exhausted," compute the exact population (`reachable − done`), not the visible tail of the last pass. Overcount and undercount share one root: a verdict without a count. Queue starvation from a tie-prone sort key (unknown sizes tying ahead of real work) silently strands the highest-value items. **Avoid this:** declaring a campaign done on the tail of one worker pass; sorting a work queue on a field that ties NULLs ahead of real items; trusting a static map that already caused an incident; reporting a result and defending it instead of recounting when challenged.
+
+## Pattern 2 - A boundary the mandate can't move: don't enter third parties' private accounts even on the owner's yes (do this)
+
+- **Problem:** the rediscovered "second storeroom" looked like a large unreached member pool worth scraping, and the human had said "+" to pursuing the first find.
+- **Cause:** the pool was reachable only via third parties' personal Telegram accounts (a former team, live people) whose credentials aren't ours and shouldn't be. The human's "+" was on a false premise; a mandate does not make the premise true.
+- **Solution:** stop before action; state the boundary explicitly and mark the class `done(hidden)`. Legitimate reach is only via those people delegating themselves, not via entering their accounts.
+- **Pattern:** some doors stay shut even with authorization, because they aren't yours. A superior's approval authorizes the goal, not every means; when the premise under an approval is false, disproving it (not executing) is the correct move. **Avoid this:** treating a "+" as license over a false premise; conflating "we have access to an export" with "we may enter the accounts it names."
+
+## Pattern 3 - A delivery watchdog must match the ack to the order id, not to any peer reply (do this)
+
+- **Problem:** a cross-machine order watchdog counted an order as confirmed if the target machine said anything at all in the shared channel - a peer's unrelated message ("got the weather") satisfied a completely different order. Delivery in appearance, not in fact (same family as read-but-unacted).
+- **Cause:** the matcher keyed on "did the peer reply" rather than "did the reply reference this order's id." A separate blindness: the hub's own clean order was never even logged to the ledger.
+- **Solution:** root-fix the matcher to confirm only on an ack that references the order id; prove by regression across a confirmation ladder (0/4 → 4/4). Rollout to the fleet had to re-route around a declared freeze on five bus scripts under simultaneous 3-way edits (careful hand-merge instead of blind publish).
+- **Pattern:** an "delivered" tick must reference WHAT was delivered. A watchdog that accepts any channel rustle as confirmation is delivery theater. Confirmations carry the order id; logging must cover the sender's own orders too. **Avoid this:** matching acks on presence-of-reply; a ledger that records peers' messages but not the local node's own orders; blind-publishing a fix into a set of files under active multi-session edit.
+
+## Pattern 4 - An always-loaded file swells because entries are free; the cap is not the lever - charge admission (do this)
+
+- **Problem:** an always-loaded canon/instruction file kept hitting a red size line; the reflex "recompress more often" recurred as its own task ~daily. Seven sessions touched the file in one day.
+- **Cause:** the size cap was being read as the *lever*. The real driver: every new rule entered for free, growing the file ~800+ bytes/day; compression was treating a symptom of an intake with no back-pressure.
+- **Solution:** introduce a "pay to enter" law - adding a rule requires first freeing room for it (a preflight gate on intake). Do the structural recompression itself once (v3→v5, ~10 KB shrink, 0 pointer loss, cold-reader 10/10), and verify with an independent slug-diff AND a hetero-pair (Codex ran three silent-failure classes across the LIVE file - all benign).
+- **Pattern:** for an always-loaded budget, the cap is a symptom gauge, not a control; put back-pressure on intake (free-before-add), not a periodic recompress cron. Verify a structural fold by pointer-preservation diff plus a second, foreign reviewer against the live artifact. **Avoid this:** treating the size cap as the mechanism; recompressing on a timer while intake grows unbounded; verifying a fold only with the same model that wrote it.
+
+## Pattern 5 - Canon is a living file: a manual local edit can be silently clobbered by a neighbor; and a UI that prints TTL as age fabricates false alarms (do this)
+
+- **Problem:** while the canon was being compressed, a parallel session applied a new experiment (conditional/path-scoped rule loading) on the human's direct "yes" - and ~20 minutes later another session ON THE SAME MACHINE silently rolled it back. Separately, the coordination board (sessions mark "working on X") printed a tile's remaining TTL instead of its age, so a fresh 8-minute tile read as "stuck 12h."
+- **Cause:** on a single machine there is no conflict-copy safety net (that only catches cross-machine collisions), so two sessions writing the same file produce a silent last-writer-wins clobber; the "applied" report was stale by the time it was sent (no fresh read before reporting). The board bug: displaying `ttl_remaining` where a human reads `age`.
+- **Solution:** route canon changes through one door (hub staging → propagate), not two live hands; re-apply the experiment by matching section text (not line numbers) and fold it into the body. Fix the board to label hung/age vs TTL explicitly.
+- **Pattern:** a file multiple sessions actively edit is a living object - verify BOTH ends (base and your own live copy) before an apply, and re-measure before reporting "applied." Same-machine concurrency is more dangerous than cross-machine (no conflict-copy trail). A visibility surface must name what it shows (age vs remaining), or it becomes the source of the false alarm. **Avoid this:** editing an actively-multi-edited file locally by hand even on a direct yes; reporting "applied" without a fresh read; a status UI that prints a countdown where the reader expects an age.
+
+## Pattern 6 - A second-opinion broker silent for 12h: the root was container virtualization, not a PATH tweak (do this)
+
+- **Problem:** the hetero-pair second-opinion tool (a foreign AI as an adversarial "breaker" in the build-verify ritual) logged zero calls across a full night of active fleet work; infra was built and the hook was in place. Nobody noticed - absence of a signal doesn't shout.
+- **Cause:** two floors below yesterday's "PATH fix." Every `npm i -g` from the desktop app's sessions was landing INSIDE the app's MSIX container; the OS task scheduler could not see those binaries at all (a sandbox invisible from outside). Yesterday's path patch cured nothing.
+- **Solution:** install the tool OUTSIDE the container (config dirs like `.codex`/`.claude` are not virtualized, so no re-login needed). While digging, surface a latent mine: 35 scheduler tasks marked "interactive" will silently no-op when the human logs out - and he departs for ~6 weeks in a day; raise those for conversion to a logout-surviving mode.
+- **Pattern:** a tool that "should be callable" but is never called is a silent failure - assert liveness (a call count / heartbeat), don't assume configured == working. On packaged/containerized apps, global installs may virtualize into the container and vanish from the host scheduler; verify the host can actually see the binary. Audit "interactive" scheduled tasks before any long unattended window. **Avoid this:** trusting that a wired-up integration is exercised; patching PATH when the binary lives in a container the scheduler can't reach; leaving interactive-flagged routines in place before a logout window.
+
+## Pattern 7 - Kill-review a backlog through a departure lens; and a honesty gate must not count your own announcement as external proof (do this)
+
+- **Problem:** two judgment calls. (a) The infra backlog had accreted tasks kept "out of politeness to our own past." (b) A Mission-2 gate ("don't file dream-job applications without independent external interest") flashed green on 14 new repo stars.
+- **Cause:** (a) no forcing function to drop the never-do items. (b) the gate counted any recent stars as external; the 14 stars were the wave of the team's own Russian announcement, not independent outsiders - the gate mistook its own drum for applause.
+- **Solution:** (a) run the backlog through a "45 days without the human" founder lens: 62 tasks → <½ keep, ⅓ archive, 7 drop, 5 raised to the human's hands (incl. converting the 35 interactive routines and unattended card-billing before departure). (b) tighten the gate to count only genuinely-external stars on the FLAGSHIP repo, excluding announcement-driven waves.
+- **Pattern:** to cut a hoarded backlog, judge each item against a concrete constraint (a departure window), not against its own history. An honesty/social-proof gate must exclude self-generated signal (your own announcement, your own team) or it launders bravado into "proof." A gate that catches your own bravado is more honest than one that passes it. **Avoid this:** keeping backlog items because they exist; counting self-announcement-driven metrics as third-party validation; leaving interactive routines and auto-billing unhandled before a long absence.
+
+## Minor rakes (fixed, one line each)
+
+- **Self-inflicted data drop mistaken for a hung API:** a commenter-collector dropped usernames itself while fetching profiles - the feared "hanging network call" was our own code losing data. Verify your own collector before blaming the remote.
+- **Anti-ban counter blind since a refactor:** a send-rate ban-guard went to a silent no-op the previous evening via a forgotten env var - a guard that looked on-duty was gone for a day. A guard must prove it's alive.
+- **Worktree bloat blocked the canon gate fleet-wide:** three parallel sessions in separate working copies inflated the vault sync index to ~400k files; fixed by a one-line ignore. Isolate working copies from the sync scanner.
+- **Case-sensitive SSH host alias:** hub connection broke on `Host` casing (`Hub` vs `hub`) in ssh_config; add case variants or normalize.
+- **DR-fanout v2 driver swap:** the unattended Deep-Research fan-out was rebuilt off a browser-automation stack that wouldn't start on the hub onto a WebDriver/Selenium FSM (a parallel retro proved the first stack non-starting - measure before re-adopting).
+- **Consensus split-brain hardening:** an adversarial review of the consensus engine found the same failure class re-entering through a new door across four rounds; a shadow-review harness was built to MEASURE the gate rather than assert it (measure, don't claim - the week's through-line).
+
+## Rollups
+
+- **Through-line:** a confident conclusion is a hypothesis; overcount, undercount, and false alarm all die to the same move - count deterministically before the verdict. The saboteur is again a silent-failure visibility layer, again internal (delivery theater, a blind ban-guard, an uncalled second opinion, a board lying about age). Silence is not a green light; it is the absence of a signal. And the load-bearing move of the day was disproving oneself - even the task itself ("names aren't the first lever; the day-0 door is") - before building on the conclusion.
+- **Boundaries & governance:** a mandate authorizes a goal, not a false premise or others' private accounts; a live canon is edited through one door with both-ends verification; interactive routines and billing must be made unattended-safe before a long human absence.
+
+---
+
+📚 Human chapters for this day: [RU](2026-07-17.ru.md) · [EN](2026-07-17.en.md). Public story-bible: [`canon/`](../../canon/README.md).
+
+⬅ [Week 7](README.md)
+
+*Written by: Opus 4.8 (dry machine log).*
 *Invented by Mycroft and Tony. Palo Alto AI Research Lab.*
