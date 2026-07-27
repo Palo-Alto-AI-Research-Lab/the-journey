@@ -23,7 +23,7 @@ tags: [decision, content-factory, distribution, audience-growth, alpha-protocol,
 ## 2. Текущие знания (RECALL)
 - Центр = волт+markdown (НЕ Airtable); HOT сегодня / COLD архив через RAG. **DR подтвердил — это правильно.**
 - Draft-first, НИЧЕГО не автопостится. **DR подтвердил** (X фильтрует дубль-автоматизацию; ручной review обязателен).
-- Голос-первый ([[concept-graphomania-voice-first-writing]]); хаб TG `-1002427790196` авто-транскрипт. **DR: Telegram идеален для voice-note summaries.**
+- Голос-первый ([[concept-graphomania-voice-first-writing]]); хаб TG `<chat-id>` авто-транскрипт. **DR: Telegram идеален для voice-note summaries.**
 - Письменный крафт уже глубоко исследован (`_CRAFT-research.md`, 26 источников). DR его НЕ трогал (так и просили).
 - Автор-голос = только Opus ([[model-routing-sonnet-grunt]] карв-аут); приватность HARD ([[fb-diary-voice]]).
 - Уже есть: FB-diary лана + контент-план в Saved. НЕТ: X-адаптер, публичный TG-канал+чат, Substack, Reddit-лана, метрика качества, формализованный cooldown-гейт.

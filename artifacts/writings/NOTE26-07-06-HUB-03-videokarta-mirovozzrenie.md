@@ -5,7 +5,7 @@
 type: content-factory-drafts
 date: 2026-06-27
 status: draft
-source: plan-2026-06-27 (clusters 2-6); voice hub -1002427790196
+source: plan-2026-06-27 (clusters 2-6); voice hub <chat-id>
 origin: anton
 authored_by: claude-opus (author-voice)
 note: draft-first, ничего не опубликовано. Кластер 1 уже в drafts/2026-06-27.md (FB «главный тормоз — это я»).

@@ -86,8 +86,8 @@ tags: [person, platinum-crm, advisor, role-model, ai-native, cyber-fund, eacc, s
 Знакомы с 2021. Степан — `relationship: advisor`. Антон представил его сообществу Stanford AI & Web3 Lab (2023) и звал как SV VC для дилфлоу AI-проектов. В августе 2022 — звонок по Platinum: Identix.Space поднимал раунд $1.2M (70% закрыто ангелами), искал лид-инвестора.
 
 **Переписка по годам:**
-- @platinumvc1: [[stepan-gershuni-2-platinumvc1-2022|2022]] · [[stepan-gershuni-2-platinumvc1-2023|2023]] · [[stepan-gershuni-2-platinumvc1-2024|2024]] · [[stepan-gershuni-2-platinumvc1-2025|2025]]
-- @TonySsd (лично): [[stepan-gershuni-2-TonySsd-2021|2021]] · [[stepan-gershuni-2-TonySsd-2022|2022]] · [[stepan-gershuni-2-TonySsd-2023|2023]] (58 сообщений!) · [[stepan-gershuni-2-TonySsd-2024|2024]] · [[stepan-gershuni-2-TonySsd-2025|2025]] · [[stepan-gershuni-2-TonySsd-2026|2026]]
+- @ассистент: [[stepan-gershuni-2-acct-assistant-2022|2022]] · [[stepan-gershuni-2-acct-assistant-2023|2023]] · [[stepan-gershuni-2-acct-assistant-2024|2024]] · [[stepan-gershuni-2-acct-assistant-2025|2025]]
+- @рабочий (лично): [[stepan-gershuni-2-acct-work-2021|2021]] · [[stepan-gershuni-2-acct-work-2022|2022]] · [[stepan-gershuni-2-acct-work-2023|2023]] (58 сообщений!) · [[stepan-gershuni-2-acct-work-2024|2024]] · [[stepan-gershuni-2-acct-work-2025|2025]] · [[stepan-gershuni-2-acct-work-2026|2026]]
 
 ## Связи
 - ⭐ Цель: [[insight-glavnaya-tsel-tsifrovoj-dvojnik]] · [[concept-digital-immortality]] · [[concept-charm-lifeos]]

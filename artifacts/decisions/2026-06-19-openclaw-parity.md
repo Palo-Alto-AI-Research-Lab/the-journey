@@ -65,7 +65,7 @@ supersedes_research: "02-Decisions/Business-Finance/1775829251--исследов
 - ⚠️ Headless-прогон строго по OAuth, не платному ключу (`prefer-included-limits-before-paid-api`).
 
 ## Рекомендации / дорожная карта (value × speed)
-1. **Phase 1 — CC из Telegram (исполнение, не только ответ).** База `telegram-watch` готова на ~70%. Блокер: login `@platinumvc1` + membership в чатах. Инкремент: слой «действие», кнопка одобрения плана.
+1. **Phase 1 — CC из Telegram (исполнение, не только ответ).** База `telegram-watch` готова на ~70%. Блокер: login `@ассистент` + membership в чатах. Инкремент: слой «действие», кнопка одобрения плана.
 2. **Phase 2 — живой голосовой цикл.** GPU-local TTS + цикл поверх Whisper. Автономно строится.
 3. **Phase 3 — WhatsApp/Slack/Discord MCP.** Research + install + auth аккаунтов Антона. ⚠️ усложнение — только если нужны (Антон живёт в Telegram).
 

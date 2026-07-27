@@ -1,5 +1,5 @@
 ---
-title: "Решение: always-on помощник @platinumvc1 — тонкий Telethon-демон (не n8n)"
+title: "Решение: always-on помощник @ассистент — тонкий Telethon-демон (не n8n)"
 type: decision
 stage: distilled
 origin: anton
@@ -12,7 +12,7 @@ tags: [decision, telegram, automation, помощник, daemon, alpha-protocol]
 concept: "[[concept-digital-immortality]]"
 ---
 
-# Decision Memo — always-on помощник @platinumvc1
+# Decision Memo — always-on помощник @ассистент
 
 > Принято через **Alpha Protocol (R+DR)** 2026-06-15: Recall → Gap → Deep Research
 > (внешний отчёт Антона) → Synthesis. Кирпич цели №1 (цифровой двойник).
@@ -24,7 +24,7 @@ concept: "[[concept-digital-immortality]]"
 
 ## Текущие знания (RECALL)
 Уже было: детектор-уши (`events.py` патч, kind=task), локальный RAG (`brain_ask`,
-e5+rerank), отдельный аккаунт-идентичность @platinumvc1, мина `AUTH_KEY_DUPLICATED`,
+e5+rerank), отдельный аккаунт-идентичность @ассистент, мина `AUTH_KEY_DUPLICATED`,
 headless по подписке, голос=Opus, деньги=никогда сам.
 
 ## Результаты Deep Research (внешний отчёт, 2026-06-15)
@@ -52,13 +52,13 @@ headless по подписке, голос=Opus, деньги=никогда с�
 - Домашний ПК падает/Wi-Fi → служба + watchdog + watermark-добор.
 - Анти-бан → узкие правила выше.
 - Инъекции в тексте задачи → текст=данные, минимальный промпт, у LLM-вызова нет прав.
-- Конфликт с аутрич-инструментами (@platinumvc1 = лид-аккаунт) → решён: у демона
+- Конфликт с аутрич-инструментами (@ассистент = лид-аккаунт) → решён: у демона
   СВОЯ независимая авторизация, MCP сохраняет свою для аутрича.
 
 ## Рекомендация и статус реализации
 Строим **A фазами (АК-47)**:
 - **Фаза 1 (MVP) — СДЕЛАНА И В ЭФИРЕ 2026-06-15.** `C:\mcp\tg-watch-daemon\` —
-  `tg_watch_daemon.py` (своя сессия @platinumvc1 id 1842936036, событийно, ловит
+  `tg_watch_daemon.py` (своя сессия @ассистент id <tg-id>, событийно, ловит
   текст и голос→локальный RU-whisper, brain_ask-грунтовка, один `claude -p` по
   подписке, черновик Антону), watermark-добор, cold-start baseline. Draft-first.
 - **Фаза 2 (закалка, по нужде):** durable outbox/очередь, DPAPI-сессия, формальный
