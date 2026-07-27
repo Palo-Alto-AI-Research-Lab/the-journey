@@ -10,7 +10,7 @@
 > Никогда не рассказывать навык/тягу/уверенность выше, чем поддерживают факты.
 
 - **Story day:** 40  # книжная нумерация (тихие дни свёрнуты); календарных 45 · live as of 2026-07-10
-- **Активные арки:** [arc-llm-hire](ARCS.md#arc-llm-hire) · [arc-swarm-consensus](ARCS.md#arc-swarm-consensus) · [arc-trust-calibration](ARCS.md#arc-trust-calibration) · [arc-competence-swap](ARCS.md#arc-competence-swap) · [arc-boundary-shifts](ARCS.md#arc-boundary-shifts) · [arc-remembering-vs-reconstructing](ARCS.md#arc-remembering-vs-reconstructing)
+- **Активные арки:** [arc-llm-hire](ARCS.md#arc-llm-hire) · [arc-swarm-consensus](ARCS.md#arc-swarm-consensus) · [arc-trust-calibration](ARCS.md#arc-trust-calibration) · [arc-competence-swap](ARCS.md#arc-competence-swap) · [arc-boundary-shifts](ARCS.md#arc-boundary-shifts) · [arc-remembering-vs-reconstructing](ARCS.md#arc-remembering-vs-reconstructing) · [arc-job-hunt-in-public](ARCS.md#arc-job-hunt-in-public)
 - **Открытые петли:** [loop-consensus-holds](LOOPS.md#loop-consensus-holds) · [loop-llm-offer](LOOPS.md#loop-llm-offer) · [loop-rag-reaches-meaning](LOOPS.md#loop-rag-reaches-meaning) · [loop-voice-coherent-series](LOOPS.md#loop-voice-coherent-series)
 - **Каст:** [cast-tony](CAST.md#cast-tony) · [cast-mike](CAST.md#cast-mike)
 
