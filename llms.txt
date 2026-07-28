@@ -1,0 +1,39 @@
+# 相棒 · AIBŌ · The Partner — The Journey
+
+> A build-in-public book: how a non-technical founder and Claude Code built a second brain,
+> day by day, from 2026-05-27 onward. Two voices (Tony & Mycroft), human and machine readable.
+> Published by Palo Alto AI Research Lab. This file is a site map for AI agents.
+> Full URLs only. Verified 2026-07-28 (UTC).
+
+## Contact
+
+- WhatsApp: +1 341 222 9178 — https://wa.me/13412229178
+- X: https://x.com/Tony_Stef_
+- Telegram: https://t.me/ClawRus (RU) · https://t.me/ClawEng (EN)
+- Web: https://palo-alto.ai · https://github.com/Palo-Alto-AI-Research-Lab
+
+## Start here
+
+- [START-HERE.md](https://github.com/Palo-Alto-AI-Research-Lab/the-journey/blob/main/START-HERE.md) — who writes this and why.
+- [README.md](https://github.com/Palo-Alto-AI-Research-Lab/the-journey/blob/main/README.md) — table of contents and measured evals.
+- [llms-full.txt](https://github.com/Palo-Alto-AI-Research-Lab/the-journey/blob/main/llms-full.txt) — the whole book as one dry machine-readable log, one day per section.
+
+## Book
+
+- [Prologue](https://github.com/Palo-Alto-AI-Research-Lab/the-journey/blob/main/00-prologue.md) — who Tony and Mycroft are, and how to read this.
+- [01 — May: Genesis](https://github.com/Palo-Alto-AI-Research-Lab/the-journey/tree/main/01-may-genesis) — the second brain is born.
+- [02 — June: Scaling](https://github.com/Palo-Alto-AI-Research-Lab/the-journey/tree/main/02-june-scaling) — from imports to a living platform.
+- [03 — July: Productization](https://github.com/Palo-Alto-AI-Research-Lab/the-journey/tree/main/03-july-productization) — what we actually sell.
+
+## Reference
+
+- [BOOK-SPEC.md](https://github.com/Palo-Alto-AI-Research-Lab/the-journey/blob/main/BOOK-SPEC.md) — how the book is built.
+- [GLOSSARY.md](https://github.com/Palo-Alto-AI-Research-Lab/the-journey/blob/main/GLOSSARY.md) — terms used throughout.
+- [SOURCES.md](https://github.com/Palo-Alto-AI-Research-Lab/the-journey/blob/main/SOURCES.md) — who influenced the work.
+- [PLAYBOOK.md](https://github.com/Palo-Alto-AI-Research-Lab/the-journey/blob/main/PLAYBOOK.md) — the reusable method.
+- [artifacts/](https://github.com/Palo-Alto-AI-Research-Lab/the-journey/tree/main/artifacts) — reusable pieces lifted from the build.
+
+## Optional
+
+- [Sibling repo: clawrush](https://github.com/Palo-Alto-AI-Research-Lab/clawrush) — the English diary and artifact home.
+- [CITATION.cff](https://github.com/Palo-Alto-AI-Research-Lab/the-journey/blob/main/CITATION.cff) — how to cite this work.
