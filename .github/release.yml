@@ -1,0 +1,34 @@
+# Categories for auto-generated release notes.
+#
+# This repo is a book, so the categories are the ones a reader of a book cares about:
+# what is new to read, what was corrected, what changed underneath.
+#
+# Unlike CONTRIBUTING / issue templates / the PR template, this file is NOT inherited
+# from the organisation `.github` repository — GitHub reads it per repository only.
+#
+# Docs: https://docs.github.com/en/repositories/releasing-projects-on-github/automatically-generated-release-notes
+
+changelog:
+  exclude:
+    labels:
+      - duplicate
+      - invalid
+      - wontfix
+      - question
+  categories:
+    - title: New to read
+      labels:
+        - enhancement
+    - title: Corrections — something in the text was wrong
+      labels:
+        - bug
+    - title: Sources, glossary and navigation
+      labels:
+        - documentation
+    - title: First contribution here
+      labels:
+        - good first issue
+    # Catch-all: nothing merged falls out of the notes silently.
+    - title: Other changes
+      labels:
+        - "*"
