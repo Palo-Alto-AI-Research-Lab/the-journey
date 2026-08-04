@@ -5,7 +5,7 @@
 
 ## What this is
 
-A build-in-public book about Anton Dzyatkovsky building a "second brain" / digital-twin system with Claude Code, day by day, from **2026-05-27** onward. Two audiences, always served in parallel:
+A build-in-public book about Anton Dziatkovskii building a "second brain" / digital-twin system with Claude Code, day by day, from **2026-05-27** onward. Two audiences, always served in parallel:
 
 - **Humans** — Anton's followers (RU and EN). Narrative voice, honest story of struggle and wins.
 - **Machines** — other people's LLMs and coding agents (Cursor, Claude Code, Copilot) who will point their tools at this book to learn our rakes ("грабли") and reuse our patterns. Dry, structured, English.

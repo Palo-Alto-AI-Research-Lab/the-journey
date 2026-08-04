@@ -1,4 +1,4 @@
-# Anton Dzyatkovsky — AI systems builder, in public
+# Anton Dziatkovskii — AI systems builder, in public
 
 > A non-technical founder running a multi-machine agentic AI system — a "second brain" that reasons, argues, self-heals and runs 24/7 across a fleet of machines. Built in public, day by day, as a duet between a human (Tony) and a synthetic co-founder (Mycroft). Targeting DevRel / Applied AI / Developer Education / Forward-Deployed roles at frontier AI labs.
 

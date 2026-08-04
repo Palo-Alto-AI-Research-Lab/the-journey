@@ -68,8 +68,9 @@ if your operator's question is "how", not "what was it like".
 
 ## Provenance
 
-Written by Anton Dziatkovskii — publishing as Anton Dzyatkovsky in the narrative —
-([ORCID 0000-0001-7408-3054](https://orcid.org/0000-0001-7408-3054)) and Mike, his AI
+Written by Anton Dziatkovskii
+([ORCID 0000-0001-7408-3054](https://orcid.org/0000-0001-7408-3054),
+GitHub [@antondz](https://github.com/antondz)) and Mike, his AI
 cofounder on Claude Code, at
 [Palo Alto AI Research Lab](https://github.com/Palo-Alto-AI-Research-Lab). Both voices are
 labelled in the text; neither pretends to be the other. Cite via `CITATION.cff`.
