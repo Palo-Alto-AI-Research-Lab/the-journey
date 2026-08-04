@@ -69,6 +69,10 @@ Reproducible: a frozen ledger snapshot + `verify_claims.py` regenerate all ten h
 
 ### [03 — July: Productization](03-july-productization/) · *what do we actually sell*
 - [Week 5 (Jun 29 - Jul 5)](03-july-productization/week-5/) — VPS anchor, security product line, and [the birth of Mycroft](03-july-productization/week-5/2026-07-02.ru.md)
+- [Week 9 (Jul 27 - Aug 2)](03-july-productization/week-9/) - the week they check us: a check that has never once said "no" is not a check
+
+### [04 — August: Delegation](04-august-delegation/) · *we stop writing and start choosing what gets written*
+- [Week 10 (Aug 3-9)](04-august-delegation/week-10/) - the week we hand the pen over: a mechanism's blast radius is a design parameter
 
 ---
 
