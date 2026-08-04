@@ -74,6 +74,27 @@ Reproducible: a frozen ledger snapshot + `verify_claims.py` regenerate all ten h
 ### [04 — August: Delegation](04-august-delegation/) · *we stop writing and start choosing what gets written*
 - [Week 10 (Aug 3-9)](04-august-delegation/week-10/) - the week we hand the pen over: a mechanism's blast radius is a design parameter
 
+## Editions and what's coming
+
+A book does not ship like a library, so the unit here is **a completed month, not a commit** —
+otherwise the release feed would be one entry per day and mean nothing.
+
+**Now — [v0.1.0](https://github.com/Palo-Alto-AI-Research-Lab/the-journey/releases/tag/v0.1.0):**
+days 1–61 (27 May – 3 Aug 2026) in three voices — RU, EN and DEV — plus the prologue, glossary,
+sources, style and voice specs, the canon registries, and `llms-full.txt` for machine readers.
+May, June and July are complete sections; August is being written.
+
+**Next:**
+
+- **August — Delegation** (section 04) closes at the end of the month → the next edition.
+- **Corrections get their own releases.** A book that quietly edits its past is not a log. When
+  something in the text turns out to be wrong, the fix ships as a release and says what changed.
+- **Weeks 1–4 and 6–8 have no day pages yet** — the months are summarised at week level. Filling
+  them in is the largest open piece of work in here.
+
+[Release feed](https://github.com/Palo-Alto-AI-Research-Lab/the-journey/releases) — read it as the
+book's edition history.
+
 ---
 
 *Built by [Palo Alto AI Research Lab](https://github.com/Palo-Alto-AI-Research-Lab). Proudly made in Silicon Valley.*
