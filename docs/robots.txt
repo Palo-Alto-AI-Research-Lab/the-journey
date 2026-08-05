@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://palo-alto-ai-research-lab.github.io/the-journey/sitemap.xml
